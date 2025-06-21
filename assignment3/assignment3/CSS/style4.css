@@ -1,0 +1,107 @@
+/* Name : Jasmeen kaur 
+Date : June 20, 2025
+File : style 4 (for part 4, assignment 3 )
+description : this gives style to web page */
+body {
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+  }
+
+  img {
+      max-width: 100%;
+      display: block;
+  }
+  
+  .logo {
+    font-size: 200%;
+    padding: 50px 20px;
+    margin: 0 auto;
+    max-width: 980px;
+  }
+  
+  .grid {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+  }
+  
+  nav {
+    background-color: #000;
+    padding: .5em;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
+  
+  .photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .feature {
+      width: 200px;
+  }
+  /* To display the navigation items in a row, with an equal amount of space between the items. */
+  nav ul{
+    display: flex;
+    flex-direction: row;
+  }
+  nav ul li{
+    flex: 1;
+  }
+  /* The navigation bar should scroll with the content and then become stuck at the top of the viewport when it reaches it. */
+  nav{
+    position: sticky ;
+    top: 0;
+  }
+  /*The image that is inside the article should have text wrapped around it.*/
+  main article img{
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+  /*
+The <article> and <aside> elements should display as a two column layout. The columns should be a flexible size so that if the browser window shrinks smaller the columns become narrower.
+*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+main article{
+    flex: 2;
+}
+main aside {
+    flex: 1;
+}
+/*The photographs should display as a two column grid with a 1 pixel gap between the images.*/
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* creates 2 equal columns */
+  gap: 1px;
+}
+
+.photos li {
+  margin: 0;
+  padding: 0;
+}
+
+.photos img {
+  width: 100%;
+  display: block;
+}
